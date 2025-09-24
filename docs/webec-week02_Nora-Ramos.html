@@ -26,13 +26,14 @@
         font-style: normal;
       }
       :root {
-        --background-color: #dee4f7;
-        --table-header: #898ac4;
-        --table-columns: #c0c9ee;
+        --background-color: #faf8ff;
+        --table-header: #9692b6;
+        --table-columns: #f1edff;
         --white: #ffffff;
         --active-link: #2e3466;
         --hover-link: #898ac4;
-        --dark-accent: #0e1c49;
+        --dark-accent: #21213d;
+        --light-accent: #413f5e;
       }
       /******General******/
       body {
@@ -42,12 +43,14 @@
         padding: 10px;
         box-shadow: 2px 10px 10px -5px rgba(0, 0, 0, 0.1);
         background-color: var(--white);
+        position: fixed;
+        width: 100%;
       }
       main  {
         display: grid;
         grid-template-columns: 10% 1fr 10%;
         grid-gap: 20px 0;
-        margin-top: 20px;
+        padding-top: 20px;
       }
       section {
         grid-column: 2/3;
@@ -69,7 +72,7 @@
         main {
           grid-template-columns: 20% 1fr 20%;
           grid-gap: 40px 0;
-          margin-top: 40px;
+          padding-top: 120px;
         }
         article {
           gap: 20px;
@@ -88,9 +91,9 @@
       }
       h2 {
         font-family: "Lora", sans-serif;
-        font-weight: 200;
-        font-style: normal;
-        margin-top: 10px;
+        font-weight: lighter;
+        font-style: italic;
+        color: var(--light-accent);
       }
       caption, 
       th {
@@ -110,11 +113,6 @@
       a:hover {
         color: var(--hover-link);
       }
-      @media screen and (min-width: 768px){
-        h2 {
-          margin-top: 20px;
-        }
-      }
       /******Table******/
       thead {
         background-color: var(--table-header);
@@ -126,12 +124,11 @@
         padding: 5px 0 5px 10px;
       }
       td {
-        padding: 10px 25px 10px 10px;
+        padding: 10px;
       }
       table {
         box-shadow: 2px 10px 10px -5px rgba(0, 0, 0, 0.1);
         background-color: var(--white);
-        border-radius: 20px;
         border-spacing: 0px;
         margin-left: auto;
         margin-right: auto;
@@ -176,74 +173,74 @@
             </thead>
             <tbody>
               <tr>
-                <td>Mi, 17.09.25</td>
-                <td>08:15 - 09:00</td>
-                <td>5.2B51 Intro (verkürzt), HTML</td>
+                <td>Mi, 17.09.25<br>08:15 - 09:00</td>
+                <td>5.2B51</td>
+                <td>Intro (verkürzt), HTML</td>
               </tr>
               <tr>
-                <td>Mi, 24.09.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 CSS Basics</td>
+                <td>Mi, 24.09.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>CSS Basics</td>
               </tr>
               <tr>
-                <td>Mi, 01.10.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 DIY Server</td>
+                <td>Mi, 01.10.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>DIY Server</td>
               </tr>
               <tr>
-                <td>Mi, 08.10.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 DIY Server Side Apps</td>
+                <td>Mi, 08.10.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>DIY Server Side Apps</td>
               </tr>
               <tr>
-                <td>Mi, 15.10.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Grails Setup, GSP Views</td>
+                <td>Mi, 15.10.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Grails Setup, GSP Views</td>
               </tr>
               <tr>
-                <td>Mi, 22.10.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Web MVC</td>
+                <td>Mi, 22.10.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Web MVC</td>
               </tr>
               <tr>
-                <td>Mi, 29.10.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Domain Model, DB</td>
+                <td>Mi, 29.10.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Domain Model, DB</td>
               </tr>
               <tr>
-                <td>Mi, 05.11.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Testing</td>
+                <td>Mi, 05.11.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Testing</td>
               </tr>
               <tr>
-                <td>Mi, 12.11.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Security, Multi-User</td>
+                <td>Mi, 12.11.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Security, Multi-User</td>
               </tr>
               <tr>
-                <td>Mi, 19.11.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Start Bewertete Übung (Anwesenheitspflicht)</td>
+                <td>Mi, 19.11.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Start Bewertete Übung (Anwesenheitspflicht)</td>
               </tr>
               <tr>
-                <td>Mi, 26.11.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.3C06 Übungsanlass</td>
+                <td>Mi, 26.11.25<br>08:15 - 11:00</td>
+                <td>5.3C06</td>
+                <td>Übungsanlass</td>
               </tr>
               <tr>
-                <td>Mi, 03.12.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Übungsanlass</td>
+                <td>Mi, 03.12.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Übungsanlass</td>
               </tr>
               <tr>
-                <td>Mi, 10.12.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Übungsanlass</td>
+                <td>Mi, 10.12.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Übungsanlass</td>
               </tr>
               <tr>
-                <td>Mi, 17.12.25</td>
-                <td>08:15 - 11:00</td>
-                <td>5.2B51 Abgabe</td>
+                <td>Mi, 17.12.25<br>08:15 - 11:00</td>
+                <td>5.2B51</td>
+                <td>Abgabe</td>
               </tr>
             </tbody>
           </table>
